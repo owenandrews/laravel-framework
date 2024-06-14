@@ -559,7 +559,7 @@ class ValidationValidatorTest extends TestCase
         $this->assertSame('First name is required!', $v->messages()->first('names.0'));
     }
 
-    public function testInlineAttributeNamesAreReplacedInArraysFromNestedRules()
+    public function testInlineAttributeNamesAreReplacedInArraysFromNestedRules() 
     {
         $trans = $this->getIlluminateArrayTranslator();
         $trans->addLines(['validation.required' => ':attribute is required!'], 'en');
